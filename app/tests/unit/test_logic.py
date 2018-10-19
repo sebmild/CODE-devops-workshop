@@ -7,5 +7,9 @@ class CalculatorTests(TestCase):
         c = Calculator()
         assert c.mul(5, 10) == 50
 
+    def test_mul_with_two_negative_numbers(self):
+        c = Calculator()
+        assert c.mul(-5,-10) == 50
+
     def test_div(self):
         pass
